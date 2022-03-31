@@ -1,4 +1,4 @@
-name: Run always
+name: Run always production
 
 on:
   push:
