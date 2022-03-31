@@ -2,9 +2,11 @@ name: Run always
 
 on:
   push:
+    branches:
+      - devel
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: echo "Hello World called from main!"
+        run: echo "Hello World called from devel!"
