@@ -3,10 +3,10 @@ name: Run always
 on:
   push:
     branches:
-      - devel
+      - production
 jobs:
   my-job:
     runs-on: ubuntu-latest
     steps:
       - name: my-step
-        run: echo "Hello World called from devel!"
+        run: echo "Hello World called from production!"
